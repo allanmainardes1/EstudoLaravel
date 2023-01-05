@@ -19,7 +19,7 @@ class GamesController extends Controller
             'Star Wars: Jedi Fallen Order'
         ];
 
-        return view('list-games', compact($games));
+        return view('list-games')->with('games', $games);
 
     }
 }
