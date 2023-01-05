@@ -10,9 +10,9 @@
         <h1>Games</h1>
 
         <ul>
-            <?php foreach ($games as $game): ?>
-            <li><?= $game; ?></li>
-            <?php endforeach; ?>
+            @foreach ($games as $game)
+            <li>{{$game}}</li>
+            @endforeach
         </ul>
 </body>
 </html>
