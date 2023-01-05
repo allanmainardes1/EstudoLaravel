@@ -22,4 +22,9 @@ class GamesController extends Controller
         return view('games.index')->with('games', $games);
 
     }
+
+    public function create()
+    {
+        return view('games.create');
+    }
 }

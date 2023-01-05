@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/list', [GamesController::class, 'index']);
+
+Route::get('/list/create', [GamesController::class, 'create']);
